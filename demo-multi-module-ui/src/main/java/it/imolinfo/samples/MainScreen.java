@@ -2,6 +2,7 @@ package it.imolinfo.samples;
 
 import it.imolinfo.MyUI;
 import it.imolinfo.samples.about.AboutView;
+import it.imolinfo.samples.about.AboutViewCssLayout;
 import it.imolinfo.samples.crud.SampleCrudView;
 
 import com.vaadin.navigator.Navigator;
@@ -31,8 +32,9 @@ public class MainScreen extends HorizontalLayout {
         menu = new Menu(navigator);
         menu.addView(new SampleCrudView(), SampleCrudView.VIEW_NAME,
                 SampleCrudView.VIEW_NAME, FontAwesome.EDIT);
-        menu.addView(new AboutView(), AboutView.VIEW_NAME, AboutView.VIEW_NAME,
-                FontAwesome.INFO_CIRCLE);
+        menu.addView(new AboutView(), AboutView.VIEW_NAME, AboutView.VIEW_NAME,  FontAwesome.INFO_CIRCLE);
+        menu.addView(new AboutViewCssLayout(), AboutViewCssLayout.VIEW_NAME, AboutViewCssLayout.VIEW_NAME,
+                FontAwesome.INFO);
 
         navigator.addViewChangeListener(viewChangeListener);
 
