@@ -20,7 +20,7 @@ public class AboutViewCssLayout extends VerticalLayout implements View {
     public AboutViewCssLayout() {
 //        CustomLayout aboutContent = new CustomLayout("aboutview");
         CssLayout aboutContent = new CssLayout();
-        aboutContent.setStyleName("about-content");
+        aboutContent.setStyleName("about-content-css-layout");
 
         // you can add Vaadin components in predefined slots in the custom
         // layout
@@ -44,7 +44,7 @@ public class AboutViewCssLayout extends VerticalLayout implements View {
              label);
 
         setSizeFull();
-        setStyleName("about-view");
+        setStyleName("about-view-css-layout-container");
         addComponent(aboutContent);
         setComponentAlignment(aboutContent, Alignment.MIDDLE_CENTER);
     }
